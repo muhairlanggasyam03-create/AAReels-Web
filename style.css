@@ -1,0 +1,19 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f0f0f; color: white; padding: 15px; margin: 0; padding-top: 70px; /* Jaga jarak dari search bar */ }
+h2 { text-align: center; color: #0088cc; margin-top: 10px; margin-bottom: 20px; font-size: 20px; }
+
+/* --- FITUR BARU: Styling Search Bar --- */
+.search-container { position: fixed; top: 0; left: 0; width: 100%; background: rgba(15,15,15,0.95); padding: 10px 15px; box-sizing: border-box; z-index: 100; border-bottom: 1px solid #333; }
+.search-container input { width: 100%; padding: 10px; border-radius: 20px; border: 1px solid #444; background: #1e1e1e; color: white; font-size: 14px; box-sizing: border-box; transition: 0.3s; }
+.search-container input:focus { outline: none; border-color: #0088cc; box-shadow: 0 0 5px rgba(0,136,204,0.5); }
+
+/* --- FITUR BARU: Grid Container (Berjejer 2 Kiri-Kanan) --- */
+#app { display: grid; grid-template-columns: 1fr 1fr; /* 2 Kolom sama besar */ gap: 10px; /* Jarak antar kartu */ }
+
+/* Styling Kartu (Disesuaikan untuk ukuran grid) */
+.card { background: #1e1e1e; border-radius: 10px; overflow: hidden; border: 1px solid #333; box-shadow: 0 3px 8px rgba(0,0,0,0.5); transition: 0.2s; }
+.card:active { transform: scale(0.97); }
+.card img { width: 100%; height: 160px; /* Dikecilin biar grid proporsional */ object-fit: cover; border-bottom: 1px solid #333; }
+.info { padding: 8px; /* Padding dikecilin */ }
+.info h3 { margin: 0 0 3px 0; font-size: 14px; /* Judul dikecilin */ color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.info p { margin: 0 0 6px 0; font-size: 11px; /* Info dikecilin */ color: #aaa; }
+.btn { display: block; background: linear-gradient(45deg, #0088cc, #005580); color: white; text-align: center; padding: 8px; /* Tombol dikecilin */ text-decoration: none; border-radius: 6px; font-weight: bold; cursor: pointer; border: none; width: 100%; font-size: 11px; /* Teks tombol dikecilin */ }
