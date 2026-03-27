@@ -1,5 +1,12 @@
 [
     {
+        "id": "1",
+        "judul": "SANG PEWARIS KEMBALI DI USIA EMPAT PULUH",
+        "poster": "https://muhairlanggasyam03-create.github.io/AAReels-Web/posters/vidio1.jpg",
+        "genre": "",
+        "rate": ""
+    },
+    {
         "id": "2",
         "judul": "Peramal Harta Legendaris",
         "poster": "https://muhairlanggasyam03-create.github.io/AAReels-Web/posters/vidio2.jpg",
@@ -7,7 +14,7 @@
         "rate": ""
     },
     {
-        "id": "1",
+        "id": "3",
         "judul": "Keluar Dari Penjara Menuju Kejayaan",
         "poster": "https://muhairlanggasyam03-create.github.io/AAReels-Web/posters/vidio3.jpg",
         "genre": "",
