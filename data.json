@@ -40,5 +40,12 @@
         "poster": "KAKAKA",
         "genre": "1",
         "rate": "HOROR"
+    },
+    {
+        "id": "6",
+        "judul": "APAAAA",
+        "poster": "oo",
+        "genre": "",
+        "rate": ""
     }
 ]
