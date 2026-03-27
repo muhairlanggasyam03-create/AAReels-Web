@@ -1,7 +1,16 @@
-// --- GEMBOK ANTI LONG PRESS/KLIK KANAN ---
-window.addEventListener('contextmenu', function (e) { 
-    e.preventDefault(); 
-}, false);
+// --- GEMBOK NUKLIR ANTI COPAS & LONG PRESS ---
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.oncontextmenu = function() { return false; };
+
+// Matiin fungsi drag (seret) bawaan browser
+document.ondragstart = function() { return false; };
+
+// Cegah sentuhan lama (long-press) tembus ke sistem
+window.addEventListener('touchstart', function(e) {
+    if (e.target.tagName === 'IMG' || e.target.tagName === 'A') {
+        e.target.style.webkitTouchCallout = 'none';
+    }
+});
 
 const tg = window.Telegram.WebApp;
 tg.expand();
