@@ -18,16 +18,20 @@ h2 { text-align: center; color: #0088cc; margin-top: 10px; margin-bottom: 20px; 
 .info p { margin: 0 0 6px 0; font-size: 11px; /* Info dikecilin */ color: #aaa; }
 .btn { display: block; background: linear-gradient(45deg, #0088cc, #005580); color: white; text-align: center; padding: 8px; /* Tombol dikecilin */ text-decoration: none; border-radius: 6px; font-weight: bold; cursor: pointer; border: none; width: 100%; font-size: 11px; /* Teks tombol dikecilin */ }
 
-/* --- GEMBOK ANTI COPAS POSTER (Tambahan Baru) --- */
-img {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-user-drag: none;
+/* --- GEMBOK ANTI MALING (FULL PROTECTION) --- */
+* {
+    -webkit-touch-callout: none !important; 
+    -webkit-user-select: none !important;   
+    user-select: none !important;           
+    -webkit-tap-highlight-color: transparent; 
 }
 
-body {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
+a, img {
+    -webkit-touch-callout: none !important; 
+    outline: none; 
+}
+
+img {
+    -webkit-user-drag: none; 
+    user-drag: none;         
 }
