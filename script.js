@@ -1,3 +1,8 @@
+// --- GEMBOK ANTI LONG PRESS/KLIK KANAN ---
+window.addEventListener('contextmenu', function (e) { 
+    e.preventDefault(); 
+});
+
 const tg = window.Telegram.WebApp;
 tg.expand();
 tg.ready();
