@@ -41,7 +41,7 @@ async function loadContent() {
         const data = await res.json();
         
         allFilmsData = data; // Simpen data asli ke global
-        renderFilms(allFilmsData); // Tampilin semua film pas awal buka
+        tampilkanHalaman(allFilmsData, 1); // <-- KABEL PLUGIN
         
     } catch (e) {
         document.getElementById('app').innerHTML = `<p style="grid-column: 1 / -1; text-align:center;">Gagal memuat data...</p>`;
@@ -54,7 +54,7 @@ searchInput.addEventListener('input', (e) => {
     const keyword = e.target.value.toLowerCase().trim();
     
     if (keyword === "") {
-        renderFilms(allFilmsData); // Kalau search bar kosong, balikin semua
+        tampilkanHalaman(allFilmsData, 1); // <-- KABEL PLUGIN
         return;
     }
 
@@ -65,7 +65,7 @@ searchInput.addEventListener('input', (e) => {
                film.rating.toString().includes(keyword);
     });
     
-    renderFilms(filteredResults); // Tampilin hasil filter
+    tampilkanHalaman(filteredResults, 1); // <-- KABEL PLUGIN
 });
 
 loadContent();
