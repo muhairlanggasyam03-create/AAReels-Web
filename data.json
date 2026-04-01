@@ -21,13 +21,6 @@
         "rate": ""
     },
     {
-        "id": "5",
-        "judul": "Jenius Sepak Bola Yang Terlahir Kembali",
-        "poster": "https://muhairlanggasyam03-create.github.io/AAReels-Web/posters/vidio4.jpg",
-        "genre": "",
-        "rate": ""
-    },
-    {
         "id": "4",
         "judul": "Jenius Sepak Bola Yang Terlahir Kembali",
         "poster": "https://muhairlanggasyam03-create.github.io/AAReels-Web/posters/vidio4.jpg",
@@ -45,6 +38,13 @@
         "id": "6",
         "judul": "APAAAA",
         "poster": "oo",
+        "genre": "",
+        "rate": ""
+    },
+    {
+        "id": "5",
+        "judul": "Tak Lagi Jadi Nona Yang Salah",
+        "poster": "https://muhairlanggasyam03-create.github.io/AAReels-Web/posters/vidio5.jpg",
         "genre": "",
         "rate": ""
     }
